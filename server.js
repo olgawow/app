@@ -54,7 +54,7 @@ router.route('/patient/:username')
     });
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/demo.html'));
 });
 app.use('/api', router);
 app.use(express.static(path.join(__dirname, 'app')));

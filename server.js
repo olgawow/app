@@ -87,7 +87,7 @@ MongoClient.connect(dbUrl, function (err, database) {
     if (err) { throw err; }
     db = database;
     //SERVER
-    app.set('port', process.env.PORT || 8000);
+    app.set('port', process.env.PORT || 1337);
     var server = app.listen(app.get('port'), function () {
         console.log('Express server listening on port ' + server.address().port);
         console.log('MongoDB is running on port ' + dbPort);
